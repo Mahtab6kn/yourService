@@ -20,7 +20,7 @@ const HeroSection = () => {
       </Link>
 
       <p className="mt-4 text-sm text-gray-500">
-        Trusted by 10 Million+ businesses worldwide
+        Empower Your Business with Our Platform
       </p>
     </div>
   );

@@ -17,10 +17,10 @@ const page = () => {
       <PromoSection />
       <StatsSection />
       <PriceCard />
-      <LandingSection />
-      <ModernLandingSection />
-      <EnterpriseSection />
-      <SupportSection />
+      {/* <LandingSection /> */}
+      {/* <ModernLandingSection /> */}
+      {/* <EnterpriseSection /> */}
+      {/* <SupportSection /> */}
     </div>
   );
 };

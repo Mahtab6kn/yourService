@@ -14,52 +14,70 @@ import {
 
 const tiers = [
   {
-    name: "Starter",
-    price: "$9",
+    name: "Basic",
+    price: "₹25,000",
     description: "Perfect for individuals",
+    pricing: {
+      quarterly: "₹25,000",
+      halfYearly: "₹45,000",
+      yearly: "₹80,000",
+    },
     features: [
-      "1 user",
-      "5GB storage",
-      "Basic support",
-      "Limited integrations",
+      "5 Services Creation",
+      "25,000 Intakes/Server Capacity",
+      "Basic Customization Options",
+      "Email Support Only (Ticket-based)",
+      "No Call/Chat Support",
+    ],
+  },
+  {
+    name: "Intermediate",
+    price: "₹50,000",
+    description: "Ideal for growing businesses",
+    pricing: {
+      quarterly: "₹50,000",
+      halfYearly: "₹90,000",
+      yearly: "₹1,60,000",
+    },
+    features: [
+      " 20 Services Creation",
+      "50,000 Intakes/Server Capacity",
+      "Moderate Customization Options (UI Changes)",
+      "Email Support and Chat Support (Business Hours)",
+      "Basic Reports and Analytics",
     ],
   },
   {
     name: "Pro",
-    price: "$29",
+    price: "₹1,00,000",
     description: "Ideal for professionals",
+    pricing: {
+      quarterly: "₹1,00,000",
+      halfYearly: "₹1,80,000",
+      yearly: "₹3,50,000",
+    },
     features: [
-      "5 users",
-      "50GB storage",
-      "Priority support",
-      "Advanced integrations",
-      "Analytics",
-    ],
-  },
-  {
-    name: "Team",
-    price: "$79",
-    description: "Great for small teams",
-    features: [
-      "20 users",
-      "200GB storage",
-      "24/7 support",
-      "Advanced integrations",
-      "Analytics",
-      "Team collaboration tools",
+      "Unlimited Services Creation",
+      "1,00,000+ Intakes/Server Capacity",
+      "No Branding (White-label)",
+      "Priority Support: Call, Chat, Email (24/7)",
+      "SLA Response Time: 8 hours",
     ],
   },
   {
     name: "Enterprise",
     price: "Custom",
     description: "For large organizations",
+    pricing: {
+      quarterly: "₹2,50,000",
+      halfYearly: "₹4,75,000",
+      yearly: "₹9,00,000",
+    },
     features: [
-      "Unlimited users",
-      "Unlimited storage",
-      "Dedicated support",
-      "Custom integrations",
-      "Advanced analytics",
-      "Enterprise-grade security",
+      "Fully Customised for Specific Business Needs",
+      " Dedicated Server and Cloud Management",
+      "White-label with Dedicated Account Manager",
+      "SLA Response Time: 4 hours",
     ],
   },
 ];
@@ -107,22 +125,56 @@ export default function PriceCard() {
                   </Typography>
                 </CardHeader>
                 <CardBody className="p-6 h-80">
-                  <Typography
-                    variant="h4"
-                    color="blue-gray"
-                    className="mt-1 mb-2 font-semibold"
-                  >
-                    {tier.price}
-                  </Typography>
-                  <Typography
-                    variant="small"
-                    color="gray"
-                    className="font-normal"
-                  >
-                    {tier.price === "Custom"
-                      ? "Contact us for pricing"
-                      : "per user/month"}
-                  </Typography>
+                  <div className="flex gap-2 justify-around">
+                    <div>
+                      <Typography
+                        variant="p"
+                        color="blue-gray"
+                        className="mt-1 mb-2 font-semibold"
+                      >
+                        {tier.pricing.quarterly}
+                      </Typography>
+                      <Typography
+                        variant="small"
+                        color="gray"
+                        className="font-normal"
+                      >
+                        Quarterly
+                      </Typography>
+                    </div>
+                    <div>
+                      <Typography
+                        variant="p"
+                        color="blue-gray"
+                        className="mt-1 mb-2 font-semibold"
+                      >
+                        {tier.pricing.halfYearly}
+                      </Typography>
+                      <Typography
+                        variant="small"
+                        color="gray"
+                        className="font-normal"
+                      >
+                        Half-Yearly
+                      </Typography>
+                    </div>
+                    <div>
+                      <Typography
+                        variant="p"
+                        color="blue-gray"
+                        className="mt-1 mb-2 font-semibold"
+                      >
+                        {tier.pricing.yearly}
+                      </Typography>
+                      <Typography
+                        variant="small"
+                        color="gray"
+                        className="font-normal"
+                      >
+                        Yearly
+                      </Typography>
+                    </div>
+                  </div>
                   <ul className="mt-6 space-y-2">
                     {tier.features.map((feature, index) => (
                       <motion.li

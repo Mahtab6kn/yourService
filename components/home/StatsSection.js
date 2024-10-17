@@ -54,9 +54,9 @@ export default function StatsSection() {
         requestAnimationFrame(animate);
       };
 
-      startCount(0, 300000, setCount300k, duration);
-      startCount(0, 25, setCount25, duration);
-      startCount(0, 3, setCount3, duration);
+      startCount(0, 300, setCount300k, duration);
+      startCount(0, 4, setCount25, duration);
+      startCount(0, 50, setCount3, duration);
     }
   }, [isVisible]);
 
@@ -67,13 +67,13 @@ export default function StatsSection() {
           {/* Left Section */}
           <div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Apps That Shape the World Are Built on Appy Pie
+              Apps That Shape Your Service Business
             </h1>
             <div className="text-blue-600 text-5xl sm:text-6xl lg:text-7xl font-bold mb-2">
               {count300k.toLocaleString()}+
             </div>
             <p className="text-gray-600 text-lg">
-              companies drive transformation with Appy Pie
+              companies drive transformation with YourServiceApp
             </p>
           </div>
 
@@ -83,8 +83,8 @@ export default function StatsSection() {
             <div className="flex-1 gap-5 border-l-2 border-gray-300 pl-10 pt-14">
               <div className="text-blue-600 text-5xl font-bold">{count25}+</div>
               <p className="text-gray-600 text-lg">
-                Countries have companies that build effective apps using Appy
-                Pie
+                Countries have companies that build effective apps using
+                YourServiceApp
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function StatsSection() {
             <div className="flex-1 gap-5 border-l-2 border-gray-300 pl-10 pt-14">
               <div className="text-blue-600 text-5xl font-bold">{count3}%</div>
               <p className="text-gray-600 text-lg">
-                Fortune 500 companies create apps with Appy Pie
+                300 companies create apps with YourServiceApp
               </p>
             </div>
           </div>

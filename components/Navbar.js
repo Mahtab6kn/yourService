@@ -9,6 +9,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -102,9 +103,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between text-blue-gray-900">
         <Link href="/">
-          <Typography className="mr-4 cursor-pointer py-1.5 font-medium">
-            YourService
-          </Typography>
+          <Image src="/logo.png" alt="logo" height={70} width={200} />
         </Link>
         <div className="mr-4 hidden lg:block">{navList}</div>
         <Link

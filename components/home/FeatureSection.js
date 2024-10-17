@@ -46,28 +46,29 @@ const FeatureSection = () => {
       </motion.h2>
       <div className="flex flex-wrap -mx-4">
         <FeatureCard
-          title="FOR ONLINE SERVICES"
-          subtitle="Make Your Services Online."
+          title="Service Creation and Management
+"
+          subtitle="List Your Services easily."
           content={
             <img
-              src="/img-2.jpeg"
+              src="https://cdn.pixabay.com/photo/2015/11/03/08/56/service-1019821_1280.jpg"
               alt="Online Services"
-              className="max-w-full h-auto"
+              className="max-w-full h-60"
             />
           }
           footer={
             <div className="flex flex-wrap justify-center gap-2">
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                WEB APPS
+                CREATION
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                MOBILE APPS
+                UPDATION
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                DASHBOARD
+                DELETION
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                LIKE URBANCLAPS
+                VALIDATION
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
                 & MORE...
@@ -76,28 +77,29 @@ const FeatureSection = () => {
           }
         />
         <FeatureCard
-          title="Amazing Features"
-          subtitle="Have a lots of Features, layout options for creating a online service website."
+          title="Efficient Booking Management
+"
+          subtitle="You have full control over your schedule."
           content={
             <img
-              src="/img-3.jpeg"
+              src="https://cdn.pixabay.com/photo/2015/10/30/12/23/teacher-1014048_1280.jpg"
               alt="Amazing Features"
-              className="max-w-full h-auto"
+              className="max-w-full h-60"
             />
           }
           footer={
             <div className="flex flex-wrap justify-center gap-2">
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                WEB APPS
+                VIEW BOOKING REQUESTS
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                MOBILE APPS
+                ACCEPT REQUESTS
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                DASHBOARD
+                REJECT REQUESTS
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                LIKE URBANCLAPS
+                UPDATE BOOKING REQUESTS
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
                 & MORE...
@@ -106,28 +108,28 @@ const FeatureSection = () => {
           }
         />
         <FeatureCard
-          title="FOR SERVICES OR HOME SERVICES"
-          subtitle="Create Your Own Service Website."
+          title="Communication Made Easy"
+          subtitle="Once a booking is confirmed, communicate directly with users through various channels."
           content={
             <img
-              src="/img-4.jpeg"
+              src="https://cdn.pixabay.com/photo/2024/03/28/19/43/customer-service-8661577_1280.png"
               alt="Service Website"
-              className="max-w-full h-auto"
+              className="max-w-full h-60"
             />
           }
           footer={
             <div className="flex flex-wrap justify-center gap-2">
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                PEST CONTROLS
+                PHONE CALL
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                AC REPAIR
+                EMAIL SUPPORT
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                ELECTRICIANS
+                WHATSAPP SUPPORT
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
-                PLUMBER
+                CHAT SUPPORT
               </span>
               <span className="bg-gray-200 rounded-full px-3 py-1 text-sm">
                 & MORE...

@@ -6,6 +6,7 @@ import {
   LinkedinIcon,
   YoutubeIcon,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -14,9 +15,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-primary">
-                YourService
-              </span>
+              <Image src="/logo.png" alt="logo" height={70} width={200} />
             </Link>
           </div>
 
