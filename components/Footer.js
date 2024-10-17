@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import {
+  FacebookIcon,
+  TwitterIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  YoutubeIcon,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -69,19 +75,19 @@ export default function Footer() {
 
           <div className="flex gap-4">
             <Link href="#" className="text-gray-400 hover:text-primary">
-              <Facebook size={20} />
+              <FacebookIcon size={20} />
             </Link>
             <Link href="#" className="text-gray-400 hover:text-primary">
-              <Twitter size={20} />
+              <TwitterIcon size={20} />
             </Link>
             <Link href="#" className="text-gray-400 hover:text-primary">
-              <Instagram size={20} />
+              <InstagramIcon size={20} />
             </Link>
             <Link href="#" className="text-gray-400 hover:text-primary">
-              <Linkedin size={20} />
+              <LinkedinIcon size={20} />
             </Link>
             <Link href="#" className="text-gray-400 hover:text-primary">
-              <Youtube size={20} />
+              <YoutubeIcon size={20} />
             </Link>
           </div>
         </div>
@@ -100,8 +106,7 @@ export default function Footer() {
             <Link href="#" className="text-primary hover:underline">
               App Builder
             </Link>{" "}
-            © 2024. All rights reserved. The technology is protected under US
-            Patent No. PCT/US21/36182.
+            © 2024. All rights reserved.
           </p>
         </div>
       </div>
